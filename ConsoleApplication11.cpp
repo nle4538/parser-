@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <string>
 #include <map>
 #include <fstream>
@@ -48,6 +48,8 @@ string httpGet(const string& url, const vector<string>& headers) {
     @details Парсит только json код для расписания, не работает с другими вариациями 
 */
 
+
+
 class SimpleJsonParser {
 private:
     string json;
@@ -91,6 +93,12 @@ private:
     }
 
 public:
+    /**
+     @brief Передает привет мир!
+   */
+    string qwert() {
+        cout << "Hello world!";
+    }
     /**
       @brief Конструктор класса принимает ответ от сервера для обработки
     */
